@@ -12,6 +12,8 @@ window.addEventListener("load", function() {
 	document.querySelector("#play").addEventListener("click", function() {
 		console.log("Play Video");
 		video.play();
+		var volume = document.getElementById("volume");
+		volume.innerHTML = slidvol * 100 + "%";
 	});
 
 	//Pauses the video
