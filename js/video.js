@@ -57,6 +57,7 @@ window.addEventListener("load", function() {
 	});
 
 	//Changes the volume of the video
+	volume.innerHTML = "100%";
 	document.querySelector("#slider").addEventListener("change", function(){
 		console.log("Changing volume");
 		var slidvol = document.getElementById("slider").value / 100;
