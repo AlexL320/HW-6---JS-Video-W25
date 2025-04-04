@@ -11,9 +11,10 @@ window.addEventListener("load", function() {
 	//Plays the video
 	document.querySelector("#play").addEventListener("click", function() {
 		console.log("Play Video");
-		video.play();
+		var slidvol = document.getElementById("slider").value / 100;
 		var volume = document.getElementById("volume");
 		volume.innerHTML = slidvol * 100 + "%";
+		video.play();
 	});
 
 	//Pauses the video
@@ -59,7 +60,6 @@ window.addEventListener("load", function() {
 	});
 
 	//Changes the volume of the video
-	volume.innerHTML = "100%";
 	document.querySelector("#slider").addEventListener("change", function(){
 		console.log("Changing volume");
 		var slidvol = document.getElementById("slider").value / 100;
