@@ -62,7 +62,7 @@ window.addEventListener("load", function() {
 		var slidvol = document.getElementById("slider").value / 100;
 		console.log(slidvol);
 		var volume = document.getElementById("volume");
-		volume.innerHTML = slidvol * 100;
+		volume.innerHTML = slidvol * 100 + "%";
 		video.volume = slidvol;
 	});
 
